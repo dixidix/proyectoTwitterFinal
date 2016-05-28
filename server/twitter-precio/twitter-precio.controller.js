@@ -18,6 +18,7 @@ module.exports = function(twitterTokens){
       if(index == 0) return acc + string;
       return acc + "%20" + string;
     }, queryString);
+    queryString = queryString + "&count=100";
     console.log(queryString);
     var options = {
       uri: "https://api.twitter.com/1.1/search/tweets.json?q=" + queryString,
