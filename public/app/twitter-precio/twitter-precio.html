@@ -1,0 +1,10 @@
+<div style="margin-top:5%">
+  <div tweet-search on-search="vm.onSearch(query)"></div>
+  <div ng-show="vm.query">
+    <h3>Resultados para {{vm.query}}:</h3>    
+     <ul class="collection">
+    <li class="collection-item avatar"  ng-repeat="tweet in vm.searchedTweets" ng-bind="tweet.text">
+
+    </li>
+  </div>
+</div>

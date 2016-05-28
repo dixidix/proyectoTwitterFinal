@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="twitterPrecio">
+  <head>
+    <meta charset="utf-8">
+    <title>Tu precio en Twitter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <nav class="navbar navbar-default" role="navigation" style="background-color:#26a69a;padding-left: 2%;">
+        <div class="col-sm-7 col-sm-offset-2" style={{marginTop: 15}}>         
+           <a href="#!" class="brand-logo"> PrecioJustoYA!!</a>
+        </div>
+      </nav>
+
+    <div ui-view class="container"></div>
+    </div>
+    <script src="app/bower_components/angular/angular.js" charset="utf-8"></script>
+    <script src="app/bower_components/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+    <script src="app/app.js" charset="utf-8"></script>
+    <script src="app/twitter-precio/twitter-precio.js" charset="utf-8"></script>
+    <script src="app/twitter-precio/twitter-precio.controller.js" charset="utf-8"></script>
+    <script src="app/twitter-precio/services/twitter-precio.service.js" charset="utf-8"></script>
+    <script src="app/twitter-precio/directives/tweet-search/twitter-precio.tweet-search.js" charset="utf-8"></script>
+    <script src="app/twitter-precio/directives/tweet-search/twitter-precio.tweet-search.controller.js" charset="utf-8"></script>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.1.8/angular-materialize.min.js"></script>
+
+
+  </body>
+</html>
