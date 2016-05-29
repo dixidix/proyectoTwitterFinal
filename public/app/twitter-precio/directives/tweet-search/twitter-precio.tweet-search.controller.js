@@ -10,8 +10,10 @@
       vm.searchTweets = searchTweets;
 
       function searchTweets(query){
+        vm.searching = true;
         twitterPrecioService.searchTweets(query).then(function(){
             vm.onSearch({query: query});
+            vm.searching = false;
         });
       }
     }

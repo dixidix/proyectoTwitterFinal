@@ -1,11 +1,26 @@
+<div class="row">
 <div class="input-group">
-  <form class="" ng-submit="vm.searchTweets(vm.query)">
-        <div class="input-field col s6">
+  <form class="" ng-submit="vm.searchTweets(vm.query)" ng-style="searchStyle" style="margin-top: 21%;transition:0.3s all ease-in-out">
+        <div class="input-field col s9">
           <input id="query" type="text"  name="name" ng-model="vm.query" autocomplete="off">
           <label for="query">#Hashtag</label>
         </div>
-    <div class="input-field col s6">
-      <button type="submit" class="waves-effect waves-light btn">Buscar Precio!</button>
+    <div class="input-field col s3">
+      <button type="submit" class="waves-effect waves-light btn" style="height:45px;width:100%;" ng-click="searchStyle={'margin-top':'3%'}">Buscar Precio</button>
       </div>
   </form>
+</div>
+</div>
+<div class="preloader-wrapper big active" style="position:absolute;top:50%;left:50%;" ng-show="vm.searching">
+  <div class="preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
 </div>

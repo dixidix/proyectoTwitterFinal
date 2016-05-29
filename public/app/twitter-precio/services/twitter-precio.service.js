@@ -26,7 +26,7 @@
           }
         }
         return $http(config).then(function(response){
-          console.log(response);
+            console.log(response);
 
           if(response.data && response.data.statuses){
             var conGeo = response.data.statuses.filter(function(status){

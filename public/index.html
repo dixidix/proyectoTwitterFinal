@@ -4,16 +4,31 @@
     <meta charset="utf-8">
     <title>Tu precio en Twitter</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   </head>
-  <body>
+  <body style="font-family: 'Roboto', sans-serif;">
     <div class="main-container">
-      <nav class="navbar navbar-default" role="navigation" style="background-color:#26a69a;padding-left: 2%;">
-        <div class="col-sm-7 col-sm-offset-2" style={{marginTop: 15}}>         
-           <a href="#!" class="brand-logo"> PrecioJustoYA!!</a>
+      <nav class="navbar navbar-default" role="navigation" style="background-color:#26a69a;padding-left: 2%;height:80px;">
+        <div class="col-sm-7 col-sm-offset-2" style={{marginTop: 15}}>
+           <a href="#!" class="brand-logo">
+             <img src="http://semiotico.net/wp-content/uploads/2014/09/money-saving.png" style="width: 50%; padding-top: 6%;">
+           </a>
+           <ul style="margin-top:10px;padding-right:2%;" id="nav-mobile" class="right hide-on-med-and-down">
+        <li><span href="#!" style="font-size:24px;">#ElPrecioJusto</span></li>
+      </ul>
         </div>
       </nav>
 
     <div ui-view class="container"></div>
+
+        <footer class="page-footer" style="padding-top:0px;position:fixed;bottom:0;width:100%;background-color:#26a69a;">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Ingeniería del software
+            <span class="grey-text text-lighten-4 right" href="#!">Daniela Garro | Elio Togno | Nicolás Sigal</span>
+            </div>
+          </div>
+        </footer>
     </div>
     <script src="app/bower_components/angular/angular.js" charset="utf-8"></script>
     <script src="app/bower_components/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
